@@ -31,5 +31,71 @@ console.log("task 5")
         factorial *= i;
         console.log(factorial)
     }
-   
+
+//task 6
+console.log("task 6")
+let arr = [3, 1, 4, 1, 5];
+for (i = 0; i < arr.length; i++)
+console.log(arr[i]);
+ //task 7
+ console.log("task 7")
+ let arr = [3, 1, 4, 1, 5];
+ for (let i = 0; i < arr.length; i++)
+console.log(arr.at(-i-1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
