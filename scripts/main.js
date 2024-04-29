@@ -38,15 +38,16 @@ let arr = [3, 1, 4, 1, 5];
 for (i = 0; i < arr.length; i++)
 console.log(arr[i]);
  //task 7
- console.log("task 7")
- let arr = [3, 1, 4, 1, 5];
+console.log("task 7") 
  for (let i = 0; i < arr.length; i++)
-console.log(arr.at(-i-1))
-
-
-
-
-
+ console.log(arr.at(-i-1));
+//task 8 
+console.log("task 8")
+let cubenumbers = []
+for(let i = 0; i < 10; i++)
+console.log(i**3)
+//task 9
+console.log("task 9")
 
 
 
