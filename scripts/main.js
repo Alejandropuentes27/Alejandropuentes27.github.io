@@ -44,11 +44,22 @@ console.log("task 7")
 //task 8 
 console.log("task 8")
 let cubenumbers = []
-for(let i = 0; i < 10; i++)
+for(let i = 0; i <= 10; i++)
 console.log(i**3)
 //task 9
 console.log("task 9")
-
+let arrFib = [0,1];
+for (let i = 0; i < 10; i++) {
+    arrFib.push(arrFib.at(-1)+arrFib.at(-2))
+}
+console.log(arrFib)
+//task 10
+console.log("task 10")
+let reverse = [];
+for (let i = 0; i < arr.length; i++) {
+    reverse.push(arr.at(-i - 1));
+}
+console.log(reverse);
 
 
 
