@@ -1,9 +1,121 @@
-p { 
-    color: red;
+
+.button1 {
+    padding: 15px 32px; 
+    border-color: rgb(255, 255, 255);
+    border-radius:10px;
+    box-shadow: 10px 5px 5px black;
+    transition-duration: 1s;
+    position:absolute;
+    bottom: 5%;
+    right: 2%;
+    border-width: 2px;
+    transition-duration: 0.8s;
+    background-color: rgb(54, 54, 54);
+    color:white;
+    font-family:sans-serif;
+    font-size:large;
+}
+.button1:hover {
+    background-color:rgb(143, 143, 143);
+
 }
 
-#about-me {
-    font-size: larger;
-    color: red;
+.button1:active {
+    transform:scale(0.95,0.95);
+    transition-duration:0.15s;
 }
 
+.button2 {
+    padding: 15px 32px; 
+    border-color: rgb(255, 255, 255);
+    border-radius:10px;
+    box-shadow: 10px 5px 5px black;
+    transition-duration: 1s;
+    position:absolute;
+    bottom: 5%;
+    left: 50px;
+    border-width: 2px;
+    transition-duration: 0.8s;
+    background-color: rgb(54, 54, 54);
+    color:white;
+    font-family:sans-serif;
+    font-size:large;
+    
+}
+.button2:hover {
+    background-color:rgb(143, 143, 143);
+   
+}
+
+.button2:active {
+    transform:scale(0.95,0.95);
+    transition-duration:0.15s;
+}
+
+.fit-picture {
+    position:absolute;
+    top: 100px;
+    right: 150px;
+}
+
+.tennis-picture {
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    display:block;
+    border-radius: 100px;
+    border-width: 10px;
+    border-color:black;
+}
+
+.round-corner-picture {
+    border-radius: 100px;
+    border-width: 10px;
+}
+
+
+.text-change {
+   text-align: center;
+}
+#subheader {
+    position:absolute;
+    left:200px;
+    bottom: 400px;
+    font-size:xx-large;
+    transition-duration:0.5s;
+}
+
+#subheader:hover {
+    color:whitesmoke;
+    transition-duration:0.5s;
+    transform:scale(1.1,1.1);
+
+
+
+}
+
+.text-size {
+    font-size: 350%;
+}
+
+.text-size-writing{
+    font-size:130%;
+    transition-duration:0.5s;
+    
+    }
+
+.text-size-writing:hover {
+    color:whitesmoke;
+    transition-duration:0.5s;
+    transform:scale(1.1,1.1);
+}
+
+.position {
+    position:absolute;
+    left:180px;
+    bottom:360px;
+}
+
+body {
+    background-color:gray;
+}
