@@ -119,3 +119,31 @@
 body {
     background-color:gray;
 }
+
+@keyframes background-color-changer {
+
+    0%{
+        background-color:rgb(187, 187, 187);
+    }
+      
+    20% {
+        background-color:rgb(104, 104, 104);
+    }
+
+    50% {
+        background-color:rgb(68, 68, 68);
+    }
+
+    70% {
+        background-color: rgb(104,104,104);
+    }
+
+    100% {
+        background-color: rgb(187, 187, 187);
+    }
+}
+body {
+    animation: background-color-changer 20s infinite;
+    animation-direction: alternate;
+}
+
