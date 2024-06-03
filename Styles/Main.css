@@ -94,6 +94,12 @@
 
 }
 
+.main-text-size {
+
+    font-size:x-large;
+
+}
+
 .text-size {
     font-size: 350%;
 }
@@ -110,10 +116,10 @@
     transform:scale(1.1,1.1);
 }
 
-.position {
+.position-facts {
     position:absolute;
     left:180px;
-    bottom:360px;
+    bottom:260px;
 }
 
 body {
