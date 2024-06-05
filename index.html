@@ -9,12 +9,11 @@
 <body>
     <h1 class = "main-text-size">My Website</h1>
     
-        <a href="tennis.html" >
-            <button class = "button1">Next Page</button>
-        </a>
-        <script src="tennis.html"></script>
+        
+    <p class = "fakebutton" >Next Page <a href="tennis.html" ></a></p>
+        
     <h2 class = "main-text-size">About Me</h2>
-    <p id="about-me">I like to play tennis and clash royale. </p>
+    <p id="about-me" class = "main-text-size">I like to play tennis and clash royale. </p>
 
     <h2 class = "main-text-size">My classes</h2>
     <p class = "main-text-size">My electives are programming and French and I go to <a href = "https://redwood.org">Redwood</a>.</p>
@@ -30,6 +29,9 @@
         <li>Tesla</li>
         <li>skeletons</li>
     </ol>
+
+    <button id="darkmode-button" class="darkmode-button">Dark mode</button>
+    <button id="lightmode-button" class="lightmode-button" >Light mode</button>
     <img
      class="fit-picture round-corner-picture"
      src="image/xbow.png" 
@@ -38,6 +40,18 @@
      />
     <script src="scripts/main.js"></script>
     <script src ="scripts/Main.css"></script>
+    <script src="tennis.html"></script>
+
+    <script>
+        document.getElementById("darkmode-button").addEventListener("click", function(){
+            document.body.style.animationName = "background-color-changer-dark";
+            document.body.style.color = "white";
+        })
+        document.getElementById("lightmode-button").addEventListener("click", function(){
+            document.body.style.animationName = "background-color-changer-light";
+            document.body.style.color = "black";
+        })
+    </script>
    
 </body>
 </html>

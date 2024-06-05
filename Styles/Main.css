@@ -1,31 +1,4 @@
-
-.button1 {
-    padding: 15px 32px; 
-    border-color: rgb(255, 255, 255);
-    border-radius:10px;
-    box-shadow: 10px 5px 5px black;
-    transition-duration: 1s;
-    position:absolute;
-    bottom: 5%;
-    right: 2%;
-    border-width: 2px;
-    transition-duration: 0.8s;
-    background-color: rgb(54, 54, 54);
-    color:white;
-    font-family:sans-serif;
-    font-size:large;
-}
-.button1:hover {
-    background-color:rgb(143, 143, 143);
-
-}
-
-.button1:active {
-    transform:scale(0.95,0.95);
-    transition-duration:0.15s;
-}
-
-.button2 {
+.fakebutton {
     padding: 15px 32px; 
     border-color: rgb(255, 255, 255);
     border-radius:10px;
@@ -42,12 +15,12 @@
     font-size:large;
     
 }
-.button2:hover {
+.fakebutton:hover {
     background-color:rgb(143, 143, 143);
    
 }
 
-.button2:active {
+.fakebutton:active {
     transform:scale(0.95,0.95);
     transition-duration:0.15s;
 }
@@ -89,9 +62,6 @@
     color:whitesmoke;
     transition-duration:0.5s;
     transform:scale(1.1,1.1);
-
-
-
 }
 
 .main-text-size {
@@ -122,34 +92,75 @@
     bottom:260px;
 }
 
-body {
-    background-color:gray;
-}
-
-@keyframes background-color-changer {
+@keyframes background-color-changer-dark {
 
     0%{
-        background-color:rgb(187, 187, 187);
+        background-color:rgb(47, 47, 47);
     }
       
     20% {
-        background-color:rgb(104, 104, 104);
+        background-color:rgb(80, 80, 80);
     }
 
     50% {
-        background-color:rgb(68, 68, 68);
+        background-color:rgb(100, 100, 100);
     }
 
     70% {
-        background-color: rgb(104,104,104);
+        background-color: rgb(80,80,80);
     }
 
     100% {
-        background-color: rgb(187, 187, 187);
+        background-color: rgb(47, 47, 47);
+    }
+}@keyframes background-color-changer-light {
+
+    0%{
+        background-color:white;
+    }
+      
+    20% {
+        background-color:lightgray;
+    }
+
+    50% {
+        background-color:lightslategray;
+    }
+
+    70% {
+        background-color:lightgray;
+    }
+
+    100% {
+        background-color:white;
     }
 }
 body {
-    animation: background-color-changer 20s infinite;
+    animation: background-color-changer-dark 16s infinite;
     animation-direction: alternate;
+}
+
+.lightmode-button{
+    background-color: white;
+    color:black;
+    padding: 10px 10px;
+    transition: 0.25s;
+}
+
+.lightmode-button:active{
+    transform:scale(0.8 , 0.8 );
+    box-shadow: 5px 5px 5px grey;
+    
+}
+
+.darkmode-button{
+    background-color: black;
+    color:white;
+    padding: 10px 10px;
+    transition: 0.25s;
+}
+.darkmode-button:active{
+    transform:scale(0.8 , 0.8 );
+    box-shadow: 5px 5px 5px grey;
 }
 
