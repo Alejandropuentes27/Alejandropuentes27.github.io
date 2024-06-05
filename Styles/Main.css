@@ -126,15 +126,15 @@ a:visited{
     }
       
     20% {
-        background-color:lightgray;
+        background-color:rgb(178, 217, 255);
     }
 
     50% {
-        background-color:lightslategray;
+        background-color:white;
     }
 
     70% {
-        background-color:lightgray;
+        background-color:rgb(178, 217, 255);
     }
 
     100% {
@@ -142,8 +142,9 @@ a:visited{
     }
 }
 body {
-    animation: background-color-changer-dark 16s infinite;
+    animation: background-color-changer-dark 10s infinite;
     animation-direction: alternate;
+    animation: background-color-changer-light 10s infinite;
 }
 
 .lightmode-button{
