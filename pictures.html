@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <link href="Styles/Main.css" rel="stylesheet">
-        <title>pictures</title>
+        <title>Primo Gallery</title>
     </head>
     <body>
+    <h1 class = "text-size" id = "title-primo">The Primo Gallery</h1>
 
     <p class = "fakebutton"  style= "position:absolute;
     bottom: 5%;
@@ -20,10 +21,24 @@
             Next Page
         </a> 
     </p>
-    
-        <img class = "gallery-photos"
-        src = image/primo.jpg
-        alt = "el primo from brawl stars"
-        style = width:700px;height:500px;>
+        <button id="darkmode-button" class="darkmode-button">Dark mode</button>
+        <button id="lightmode-button" class="lightmode-button" >Light mode</button>
+
+        <div class = "container">
+            <img id = "galleryImage" src ="image/primo.jpg" alt="el primo from brawl stars">
+        </div>
+
+        <script>
+            document.getElementById("darkmode-button").addEventListener("click", function(){
+                document.body.style.animationName = "background-color-changer-dark";
+                document.body.style.color = "white";
+            })
+            document.getElementById("lightmode-button").addEventListener("click", function(){
+                document.body.style.animationName = "background-color-changer-light";
+                document.body.style.color = "black";
+            })
+
+        </script>
+        <script src="scripts/main2.js"></script>
     </body>
 </html>

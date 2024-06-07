@@ -5,9 +5,63 @@ a:visited{
     color:white;
 }
 
+body {
+    height:100px;
+    margin:0;
+}
+
+#title-primo {
+    position:absolute;
+    top:50px;
+    left:700px;
+}
+#title-games {
+    position:absolute;
+    top:50px;
+    left:775px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    bottom: 325px;
+    left:780px;
+    border:10px black;
+}
+
+
+.tennis-ball {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    animation:ball-roll 2s alternate linear infinite;
+    position:absolute;
+    bottom:150px;
+    right:25%;
+    box-shadow:-40px 20px 20px;
+    background:radial-gradient(circle, #CCff00, #657e00);
+}
+
+@keyframes ball-roll {
+
+0%,100% {
+    transform:translateX(0);
+    animation-timing-function:ease-in-out ;
+}
+50% {
+    transform:translateX(calc(-30vw - 300px));
+    animation-timing-function:ease-in-out;
+}
+
+}
 
 .fakebutton {
-    padding: 15px 32px; 
+    padding: 10px 24px; 
     border-color: rgb(255, 255, 255);
     border-radius:10px;
     box-shadow: 10px 5px 5px black;
@@ -37,6 +91,18 @@ a:visited{
     right: 150px;
 }
 
+.game1 {
+    position:absolute;
+    top:250px;
+    left:950px;
+}
+
+.game2{
+    position:absolute;
+    top:250px;
+    left:450px;
+}
+
 .tennis-picture {
     margin-left:auto;
     margin-right:auto;
@@ -62,10 +128,11 @@ a:visited{
     bottom: 400px;
     font-size:xx-large;
     transition-duration:0.5s;
+
 }
 
 #subheader:hover {
-    color:whitesmoke;
+    color:rgb(255, 136, 0);
     transition-duration:0.5s;
     transform:scale(1.1,1.1);
 }
@@ -78,16 +145,17 @@ a:visited{
 
 .text-size {
     font-size: 350%;
+    font-weight:bold;
 }
 
 .text-size-writing{
     font-size:130%;
     transition-duration:0.5s;
-    
+    font-weight:bold;
     }
 
 .text-size-writing:hover {
-    color:whitesmoke;
+    color:rgb(255, 136, 0);
     transition-duration:0.5s;
     transform:scale(1.1,1.1);
 }

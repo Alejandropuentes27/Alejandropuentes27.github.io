@@ -5,7 +5,7 @@
     <title> games</title>
 </head>
     <body>
-    
+        <h1 class = "text-size" id = "title-games">The Games</h1>
         <p class = "fakebutton"  style= "position:absolute;
         bottom: 5%;
         left: 50px;"> 
@@ -13,7 +13,22 @@
                  Previous Page
             </a> 
         </p>
-        
+            <button id="darkmode-button" class="darkmode-button">Dark mode</button>
+            <button id="lightmode-button" class="lightmode-button" >Light mode</button>
+
+            <iframe class = "game1" src="https://scratch.mit.edu/projects/10128407/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe class = "game2" src="https://scratch.mit.edu/projects/105500895/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+            <script>
+                document.getElementById("darkmode-button").addEventListener("click", function(){
+                    document.body.style.animationName = "background-color-changer-dark";
+                    document.body.style.color = "white";
+                })
+                document.getElementById("lightmode-button").addEventListener("click", function(){
+                    document.body.style.animationName = "background-color-changer-light";
+                    document.body.style.color = "black";
+                })
+            </script>
     </body>
 
 </html>
