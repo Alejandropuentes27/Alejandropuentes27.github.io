@@ -9,4 +9,4 @@ const galleryImage = document.getElementById('galleryImage');
 setInterval(() => {
     galleryImage.src = images[currentImage];
     currentImage = (currentImage + 1) % images.length;
-}, 3000);
+}, 2000);
